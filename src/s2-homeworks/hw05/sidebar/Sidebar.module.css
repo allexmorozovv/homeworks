@@ -1,7 +1,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 999;
     left: -100%;
     position: fixed;
     transition: 850ms;
