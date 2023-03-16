@@ -21,30 +21,6 @@ const HW13 = () => {
     const [image, setImage] = useState('')
     const [loading, setLoading] = useState(false)
 
-    // const send = (x?: boolean | null) => () => {
-    //     const url =
-    //         x === null
-    //             ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-    //             : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
-    //
-    //     setCode('')
-    //     setImage('')
-    //     setText('')
-    //     setInfo('...loading')
-    //
-    //     axios
-    //         .post(url, {success: x})
-    //         .then((res) => {
-    //             setCode('Код 200!')
-    //             setImage(success200)
-    //             // дописать
-    //
-    //         })
-    //         .catch((e) => {
-    //             // дописать
-    //
-    //         })
-    // }
 
     const send = (x?: boolean | null) => () => {
         const url =
@@ -90,11 +66,6 @@ const HW13 = () => {
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 }
-                // else {
-                //     setImage(errorUnknown)
-                //     setCode(e.message)
-                //     setInfo('error')
-                // }
             })
     }
 
